@@ -1,0 +1,43 @@
+// 変数
+$gray: #7070704D;
+
+
+
+.inner {
+    width: 100% - 2*8%;
+    margin: 0 auto;
+}
+.title {
+    font-style: 18px;
+    color: #707070;
+    &:after {
+        display: inline-block;
+        content: "";
+        border-bottom: 1px solid #707070;
+        width: 99px;
+        margin-left: 22px;
+    }
+}
+
+
+
+
+
+@mixin pc {
+    @media screen and (min-width: 960px) {
+        @content;
+    }    
+}
+@mixin tab {
+    @media screen and (max-width:959px) {
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width:600px) {
+        @content;
+    }
+}
+
+
+

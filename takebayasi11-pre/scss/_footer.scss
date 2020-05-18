@@ -1,0 +1,44 @@
+footer {
+    
+    .footer-logo {
+        margin-top: 84px;
+        margin-bottom: 62px;
+        font-size: 32px;
+        color: $gray;
+        @include sp {
+            font-size: 18px;
+        }
+    }    
+    .reserve {
+        display: inline-block;
+        margin-top: 81px;
+        margin-bottom: 60px;
+        padding: 10px 41px 9px 41px;
+        border: 1px solid #707070;
+        color: #707070;
+        font-size: 18px;
+        @include sp {
+            text-align: center;
+        }
+    }    
+    
+    .footer-line {
+        display: inline-block;
+        width: 100%;
+        padding-top: 165px;
+        border-bottom: 1px solid #70707036;
+        @include sp {
+            padding-top: 63.5px;
+        }
+    }
+    .footer-inner-box {
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+            flex-direction: column-reverse;
+        }
+        span {
+            color: black;
+        }
+    }
+}

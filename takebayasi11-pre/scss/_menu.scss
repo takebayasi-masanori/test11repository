@@ -1,0 +1,43 @@
+#menu {
+    padding-top: 296px;
+    .menu-wrap {
+        display: flex;
+        @include sp {
+            flex-direction: column;
+        }
+    }    
+    .menu-item {
+        width: 25%;
+        @include sp {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }  
+    }
+    .item1 {
+        margin-right: 125px;
+    }
+    .item2 {
+        margin-right: 127px;
+    }
+    .content-title {
+        margin-top: 37px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        @include sp {
+            text-align: left;
+        }
+    }
+    .content-intro {
+        font-size: 16px;
+        margin-top: 34px;
+    }
+    .value {
+        margin-top: 34px;
+        margin-bottom: 70px;
+        font-size: 16px;
+        text-align: right;
+    }
+}    
